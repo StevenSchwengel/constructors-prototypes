@@ -37,7 +37,17 @@ function expect(target) {
 //
 // ONLY ADD CODE TO THIS SECTION
 
+function Human ()
+ {
+   const mady = new Dog ({oz})
+     {this.status: 'normal'};
+      );
+ }
 
+ function Dog ()
+  {
+
+  }
 
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
