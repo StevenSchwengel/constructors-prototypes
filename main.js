@@ -37,17 +37,55 @@ function expect(target) {
 //
 // ONLY ADD CODE TO THIS SECTION
 
-function Human ()
- {
-   const mady = new Dog ({oz})
-     {this.status: 'normal'};
-      );
+// function tobe()
+//   { console.log('hi');  }
+//
+// function contents()
+//    { console.log('hi');
+//    }
+//
+//
+
+// / trial line
+//    console.log(Human);
+//    console.log('trial above');
+
+
+// trial line
+//console.log(Human.prototype.status);
+
+
+
+
+function Human (){
+
  }
 
- function Dog ()
-  {
+ Human.prototype.pet = function(dog) {
+   dog.status = 'happy';
+   dog.color = 'red';
+ }
 
-  }
+ Human.prototype.feed = function() {
+ }
+
+ Dog.prototype.feed = function(dog){
+   
+ }
+
+
+function Dog (){
+
+}
+
+ // const oz = new Dog (
+ //   {this.status = 'happy'});
+
+//it("bob", "hi");
+//t(bob);
+
+
+//console.log(oz);
 
 //     __
 //    / /_  __  ______ ___  ____ _____  _____
