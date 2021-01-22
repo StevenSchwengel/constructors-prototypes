@@ -59,18 +59,31 @@ function expect(target) {
 
 function Human (){
 
+}
+
+Human.prototype.pet = function(dog) {
+  dog.status = 'happy';
+  dog.color = 'red';
+}
+
+
+ Human.prototype.feed = function(dog) {
+  dog.hungry = false;
  }
 
- Human.prototype.pet = function(dog) {
-   dog.status = 'happy';
-   dog.color = 'red';
+ Human.prototype.status = function(human){
+   human.Faith.cool = true;
  }
+ //
+ // Dog.prototype.owner = function(Oz, Mady) {
+ //   dog.name = "oz";
+ //   dog.owner = "mady";
+ // }
 
- Human.prototype.feed = function() {
- }
+ Dog.prototype.owner = function(moonshine, Oz) {
+   dog.name = true;
+   dog.owner = false;
 
- Dog.prototype.feed = function(dog){
-   
  }
 
 
