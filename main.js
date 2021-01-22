@@ -91,6 +91,19 @@ function Dog (){
 
 }
 
+//  I had to look at someone else code to get guidance on this...
+// I'm still trying to figuire this out...
+// My best guess is that it fills in blanks as undefined when not defined and prevents error messages.
+
+
+function Dog({color, hungry = true, owner, status = 'normal'} = {}) {
+  this.color = color,
+  this.hungry = hungry,
+  this.owner = owner;
+  this.status = status;
+};
+
+
  // const oz = new Dog (
  //   {this.status = 'happy'});
 
