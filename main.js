@@ -54,16 +54,21 @@ function expect(target) {
 // trial line
 //console.log(Human.prototype.status);
 
+//
+// oz.owner = 'mady';
+//
+// new Dog (color, hungry = true, owner, status = 'normal') {
+//   this.dog =
+// }
 
-
-
-function Human (){
-
+function Human({name, cool = false} = {}) {
+  this.name = name;
+  this.cool = cool;
 }
 
 Human.prototype.pet = function(dog) {
   dog.status = 'happy';
-  dog.color = 'red';
+  // dog.color = 'red';
 }
 
 
@@ -71,27 +76,25 @@ Human.prototype.pet = function(dog) {
   dog.hungry = false;
  }
 
- Human.prototype.status = function(human){
-   human.Faith.cool = true;
- }
+ // Human.prototype.status = function(human){
+ //   human.Faith.cool = true;
+ // }
  //
- // Dog.prototype.owner = function(Oz, Mady) {
- //   dog.name = "oz";
- //   dog.owner = "mady";
+ Dog.prototype.owner = function(dog, human) {
+
+   // dog.name = Oz;
+   // dog.owner = Mady;
+ }
+
+ // Dog.prototype.owner = function(dog) {
+ //   dog.name = true;
+ //   dog.owner = false;
+ //
  // }
 
- Dog.prototype.owner = function(moonshine, Oz) {
-   dog.name = true;
-   dog.owner = false;
-
- }
 
 
-function Dog (){
-
-}
-
-//  I had to look at someone else code to get guidance on this...
+//  I had to look at someone else's code to get guidance on this...
 // I'm still trying to figuire this out...
 // My best guess is that it fills in blanks as undefined when not defined and prevents error messages.
 
@@ -102,6 +105,8 @@ function Dog({color, hungry = true, owner, status = 'normal'} = {}) {
   this.owner = owner;
   this.status = status;
 };
+
+
 
 
  // const oz = new Dog (
